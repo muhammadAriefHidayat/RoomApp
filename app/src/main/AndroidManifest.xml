@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomApp">
+        <activity android:name=".EditPengeluaranActivity"/>
         <activity android:name=".AddPengeluaranActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -2,7 +2,7 @@ package com.apps.roomapp.room
 
 import androidx.room.*
 import androidx.room.OnConflictStrategy.REPLACE
-import com.apps.roomapp.Pengeluaran
+import com.apps.roomapp.model.Pengeluaran
 
 @Dao
 interface PengeluaranDao {
