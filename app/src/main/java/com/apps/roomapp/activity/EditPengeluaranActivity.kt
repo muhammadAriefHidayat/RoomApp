@@ -1,8 +1,10 @@
-package com.apps.roomapp
+package com.apps.roomapp.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.apps.roomapp.EXTRA_DATA
+import com.apps.roomapp.R
 import com.apps.roomapp.model.Pengeluaran
 import com.apps.roomapp.room.PengeluaranDatabase
 import kotlinx.android.synthetic.main.activity_add_pengeluaran.*
@@ -19,7 +21,7 @@ class EditPengeluaranActivity : AppCompatActivity() {
 
         mDb = PengeluaranDatabase.getInstance(this)
 
-        val objectPengeluaran = intent.getParcelableExtra<Pengeluaran>(Extra)
+        val objectPengeluaran = intent.getParcelableExtra<Pengeluaran>(EXTRA_DATA)
 
         edt_barang.setText(objectPengeluaran?.barang)
         edt_harga.setText(objectPengeluaran?.harga.toString())

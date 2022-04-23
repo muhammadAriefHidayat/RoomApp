@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.apps.roomapp.*
+import com.apps.roomapp.activity.EditPengeluaranActivity
+import com.apps.roomapp.activity.MainActivity
 import com.apps.roomapp.model.Pengeluaran
 import com.apps.roomapp.room.PengeluaranDatabase
 import kotlinx.android.synthetic.main.pengeluaran_item.view.*
@@ -38,7 +40,7 @@ class PengeluaranAdapter(val listPengeluaran : List<Pengeluaran>) : RecyclerView
             val intentKeEditActivity = Intent(it.context,
                 EditPengeluaranActivity::class.java)
 
-            intentKeEditActivity.putExtra(Extra,listPengeluaran[position])
+            intentKeEditActivity.putExtra(EXTRA_DATA,listPengeluaran[position])
             it.context.startActivity(intentKeEditActivity)
         }
 

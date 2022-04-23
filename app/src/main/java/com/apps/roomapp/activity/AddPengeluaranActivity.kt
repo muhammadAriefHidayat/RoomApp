@@ -1,9 +1,10 @@
-package com.apps.roomapp
+package com.apps.roomapp.activity
 
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.apps.roomapp.R
 import com.apps.roomapp.model.Pengeluaran
 import com.apps.roomapp.room.PengeluaranDatabase
 import kotlinx.android.synthetic.main.activity_add_pengeluaran.*

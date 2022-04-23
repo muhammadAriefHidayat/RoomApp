@@ -1,4 +1,4 @@
 package com.apps.roomapp
 
 
-const val Extra = "Extra"
+const val EXTRA_DATA = "Extra"
