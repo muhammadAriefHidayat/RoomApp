@@ -36,7 +36,7 @@ class PengeluaranAdapter(val listPengeluaran : List<Pengeluaran>) : RecyclerView
         holder.itemView.tv_harga.text = listPengeluaran[position].harga.toString()
         holder.itemView.tv_tanggal.text = listPengeluaran[position].tanggal.toString()
 
-        holder.itemView.ivEdit.setOnClickListener {
+        holder.itemView.iv_edit.setOnClickListener {
             val intentKeEditActivity = Intent(it.context,
                 EditPengeluaranActivity::class.java)
 
@@ -44,7 +44,7 @@ class PengeluaranAdapter(val listPengeluaran : List<Pengeluaran>) : RecyclerView
             it.context.startActivity(intentKeEditActivity)
         }
 
-        holder.itemView.ivDelete.setOnClickListener {
+        holder.itemView.iv_delete.setOnClickListener {
             AlertDialog.Builder(it.context).setPositiveButton("Ya") { p0, p1 ->
                 val mDb = PengeluaranDatabase.getInstance(holder.itemView.context)
 

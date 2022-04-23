@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mDB = PengeluaranDatabase.getInstance(this)
 
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
+        rv_main.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
 
         fetchData()
         
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             runOnUiThread{
                 listPengeluaran?.let {
                     val adapter = PengeluaranAdapter(it)
-                    recyclerView.adapter = adapter
+                    rv_main.adapter = adapter
                 }
             }
         }
