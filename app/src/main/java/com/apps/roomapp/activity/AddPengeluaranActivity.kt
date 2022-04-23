@@ -68,8 +68,6 @@ class AddPengeluaranActivity : AppCompatActivity() {
                         finish()
                     }
                 }
-            }else{
-                Toast.makeText(this@AddPengeluaranActivity,"Pilih tanggal terlebih dulu", Toast.LENGTH_LONG).show()
             }
         }
 
