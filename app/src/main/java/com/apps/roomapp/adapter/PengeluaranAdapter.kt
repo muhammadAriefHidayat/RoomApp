@@ -45,7 +45,7 @@ class PengeluaranAdapter(val listPengeluaran : List<Pengeluaran>) : RecyclerView
         }
 
         holder.itemView.iv_delete.setOnClickListener {
-            AlertDialog.Builder(it.context).setPositiveButton("Ya") { p0, p1 ->
+            AlertDialog.Builder(it.context).setPositiveButton("Ya") { _, _ ->
                 val mDb = PengeluaranDatabase.getInstance(holder.itemView.context)
 
                 GlobalScope.async {
